@@ -34,7 +34,6 @@ function draw(userChoice, computerChoice) {
   result_p.innerHTML = `${userChoice} vs ${computerChoice}. Its a Draw!`;
   result_p.classList.add("fade-in-grey");
   setTimeout(() => result_p.classList.remove("fade-in-grey"), 150);
-
   document.getElementById(userChoice).classList.add("grey-glow")
   setTimeout(() => document.getElementById(userChoice).classList.remove("grey-glow"), 300);
 }
@@ -44,13 +43,8 @@ function lose(userChoice, computerChoice) {
   computerScore_span.innerHTML = computerScore;
   userScore_span.innerHTML = userScore;
   result_p.innerHTML = `${userChoice} vs ${computerChoice}. Comp Wins!`;
-
-  // Add a class for fade-in animation
   result_p.classList.add("fade-in-red");
-
-  // Remove the class after a short delay
   setTimeout(() => result_p.classList.remove("fade-in-red"), 150);
-  
   document.getElementById(userChoice).classList.add("red-glow")
   setTimeout(() => document.getElementById(userChoice).classList.remove("red-glow"), 300);
 }
@@ -76,9 +70,7 @@ function game(userChoice) {
 
 function main() {
   rock_div.addEventListener("click", () => game("Rock"));
-
   paper_div.addEventListener("click", () => game("Paper"));
-
   scissors_div.addEventListener("click", () => game("Scissors"));
 }
 

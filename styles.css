@@ -67,22 +67,22 @@ header > h1 {
 
 .result > p {
   font-weight: bold;
-  transition: all 0.15s ease-in-out;;
+  transition: all 0.15s ease-in;;
 }
 
 .fade-in-green {
   color: #4dcc7d;;
-  font-size: 40px;
+  /* font-size: 40px; */
 }
 
 .fade-in-grey {
   color: #464647;
-  font-size: 40px;
+  /* font-size: 40px; */
 }
 
 .fade-in-red {
   color: #fc121b;
-  font-size: 40px;
+  /* font-size: 40px; */
 }
 
 .choices {
